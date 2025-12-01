@@ -230,7 +230,7 @@ async def update_stickers() -> None:
         msg = getattr(e, "message", str(e)).lower()
         print("get_sticker_set error:", msg)
         if "stickerset_invalid" in msg or "stickerset not found" in msg:
-            # набора нет — создаём с двумя стикерами сразу
+            # набора нет — создаём новый сразу со всеми городами
             await bot.create_new_sticker_set(
                 user_id=owner_user_id,
                 name=set_name,
@@ -243,22 +243,52 @@ async def update_stickers() -> None:
         else:
             raise
 
-    # 3) Набор существует — удаляем все старые стикеры
-    for s in sticker_set.stickers:
-        try:
-            await bot.delete_sticker_from_set(s.file_id)
-            print(f"Deleted old sticker {s.file_id}")
-        except BadRequest as e:
-            print("delete_sticker_from_set error:", getattr(e, "message", str(e)))
+    # 3) Набор существует — делаем replace там, где можем
+    old_stickers = sticker_set.stickers
+    old_count = len(old_stickers)
+    new_count = len(new_stickers)
+    common = min(old_count, new_count)
 
-    # 4) Добавляем наши два новых стикера
-    for st in new_stickers:
-        await bot.add_sticker_to_set(
-            user_id=owner_user_id,
-            name=set_name,
-            sticker=st,
-        )
-    print(f"Updated sticker set {set_name} with weather for Tula and Malmö")
+    # 3a) replace для общих позиций
+    for i in range(common):
+        old_id = old_stickers[i].file_id
+        new_st = new_stickers[i]
+        try:
+            await bot.replace_sticker_in_set(
+                user_id=owner_user_id,
+                name=set_name,
+                old_sticker=old_id,
+                sticker=new_st,
+            )
+            print(f"Replaced sticker {old_id} with new one at position {i}")
+        except BadRequest as e:
+            print("replace_sticker_in_set error:", getattr(e, "message", str(e)))
+
+    # 3б) если новых больше — добавляем хвост
+    if new_count > old_count:
+        for i in range(common, new_count):
+            st = new_stickers[i]
+            try:
+                await bot.add_sticker_to_set(
+                    user_id=owner_user_id,
+                    name=set_name,
+                    sticker=st,
+                )
+                print(f"Added extra sticker at position {i}")
+            except BadRequest as e:
+                print("add_sticker_to_set error:", getattr(e, "message", str(e)))
+
+    # 3в) если старых больше — удаляем лишние в конце
+    elif old_count > new_count:
+        for i in range(common, old_count):
+            old_id = old_stickers[i].file_id
+            try:
+                await bot.delete_sticker_from_set(old_id)
+                print(f"Deleted extra old sticker {old_id} at position {i}")
+            except BadRequest as e:
+                print("delete_sticker_from_set error:", getattr(e, "message", str(e)))
+
+    print(f"Updated sticker set {set_name} with weather for {new_count} cities")
 
 
 if __name__ == "__main__":
