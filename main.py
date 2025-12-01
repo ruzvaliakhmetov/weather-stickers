@@ -57,6 +57,12 @@ CITIES = [
         output="sticker_haifa.png",
     ),
     CityConfig(
+        name="Karmiel",
+        query="Karmiel, IL",
+        emoji="🏙️",
+        output="sticker_karmiel.png",
+    ),
+    CityConfig(
         name="Ufa",
         query="Ufa,RU",
         emoji="🏙️",
