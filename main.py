@@ -45,7 +45,7 @@ CITIES = [
         output="sticker_moscow.png",
     ),
     CityConfig(
-        name="St Petersburg",
+        name="Petersburg",
         query="Saint Petersburg,RU",
         emoji="🏙️",
         output="sticker_saintpetersburg.png",
