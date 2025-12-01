@@ -38,6 +38,26 @@ CITIES = [
         emoji="🏙️",
         output="sticker_belgrade.png",
     ),
+    CityConfig(
+        name="Moscow",
+        query="Moscow,RU",
+        emoji="🏙️",
+        output="sticker_moscow.png",
+    ),
+    
+    CityConfig(
+        name="Saint Petersburg",
+        query="Saint Petersburg, RU",
+        emoji="🏙️",
+        output="sticker_saintpetersburg.png",
+    ),
+    
+    CityConfig(
+        name="Haifa",
+        query="Haifa, IL",
+        emoji="🏙️",
+        output="sticker_haifa.png",
+    ),
 ]
 
 
