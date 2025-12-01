@@ -23,14 +23,20 @@ CITIES = [
     CityConfig(
         name="Tula",
         query="Tula,RU",
-        emoji="🌤",
+        emoji="🏙️",
         output="sticker_tula.png",
     ),
     CityConfig(
         name="Malmö",
         query="Malmo,SE",  # в API без умлаута
-        emoji="⛅️",
+        emoji="🏙️",
         output="sticker_malmo.png",
+    ),
+    CityConfig(
+        name="Belgrade",
+        query="Belgrade,RS",
+        emoji="🏙️",
+        output="sticker_belgrade.png",
     ),
 ]
 
