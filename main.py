@@ -44,19 +44,29 @@ CITIES = [
         emoji="🏙️",
         output="sticker_moscow.png",
     ),
-    
     CityConfig(
         name="St Petersburg",
-        query="Saint Petersburg, RU",
+        query="Saint Petersburg,RU",
         emoji="🏙️",
         output="sticker_saintpetersburg.png",
     ),
-    
     CityConfig(
         name="Haifa",
-        query="Haifa, IL",
+        query="Haifa,IL",
         emoji="🏙️",
         output="sticker_haifa.png",
+    ),
+    CityConfig(
+        name="Ufa",
+        query="Ufa,RU",
+        emoji="🏙️",
+        output="sticker_ufa.png",
+    ),
+     CityConfig(
+        name="Hamburg",
+        query="Hamburg,DE",
+        emoji="🏙️",
+        output="sticker_hamburg.png",
     ),
 ]
 
