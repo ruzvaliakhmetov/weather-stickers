@@ -59,27 +59,27 @@ DEGREE_LAYOUT = BlockLayout(
 # День (например "07")
 DAY_LAYOUT = BlockLayout(
     x=380,
-    y=400,
+    y=300,
     font_size=80,
 )
 
 # Месяц (например "Dec")
 MONTH_LAYOUT = BlockLayout(
     x=380,
-    y=450,
+    y=400,
     font_size=40,
 )
 
 # Время (например "20:55")
 TIME_LAYOUT = BlockLayout(
-    x=40,
-    y=50,
+    x=380,
+    y=450,
     font_size=40,
 )
 
 # Блок деталей (humidity, wind, conditions) — три строки
 DETAILS_LAYOUT = DetailsLayout(
-    x=40,
+    x=50,
     y=300,       # стартовая Y для первой строки
     font_size=30,
     line_spacing=6,
@@ -119,13 +119,13 @@ CITIES = [
 #        output="sticker_malmo.png",
 #        background="bg_malmo.png",
 #    ),
-#    CityConfig(
-#        name="Belgrade",
-#        query="Belgrade,RS",
-#        emoji="🏙️",
-#        output="sticker_belgrade.png",
-#        background="bg_belgrade.png",
-#    ),
+    CityConfig(
+        name="Belgrade",
+        query="Belgrade,RS",
+        emoji="🏙️",
+        output="sticker_belgrade.png",
+        background="bg_belgrade.png",
+    ),
     CityConfig(
         name="Moscow",
         query="Moscow,RU",
@@ -154,13 +154,13 @@ CITIES = [
  #       output="sticker_karmiel.png",
  #       background="bg_karmiel.png",
  #   ),
- #   CityConfig(
- #       name="Ufa",
- #       query="Ufa,RU",
- #       emoji="🏙️",
- #       output="sticker_ufa.png",
- #       background="bg_ufa.png",
- #   ),
+    CityConfig(
+        name="Ufa",
+        query="Ufa,RU",
+        emoji="🏙️",
+        output="sticker_ufa.png",
+        background="bg_ufa.png",
+    ),
  #   CityConfig(
  #       name="Hamburg",
  #       query="Hamburg,DE",
