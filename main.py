@@ -45,7 +45,7 @@ CITY_LAYOUT = BlockLayout(
 # Температура (число)
 TEMP_LAYOUT = BlockLayout(
     x=300,   # None = центр по горизонтали
-    y=50,
+    y=30,
     font_size=140,
 )
 
@@ -60,27 +60,27 @@ DEGREE_LAYOUT = BlockLayout(
 DAY_LAYOUT = BlockLayout(
     x=380,
     y=300,
-    font_size=80,
+    font_size=50,
 )
 
 # Месяц (например "Dec")
 MONTH_LAYOUT = BlockLayout(
     x=380,
-    y=400,
+    y=380,
     font_size=40,
 )
 
 # Время (например "20:55")
 TIME_LAYOUT = BlockLayout(
     x=380,
-    y=450,
-    font_size=40,
+    y=420,
+    font_size=30,
 )
 
 # Блок деталей (humidity, wind, conditions) — три строки
 DETAILS_LAYOUT = DetailsLayout(
     x=50,
-    y=300,       # стартовая Y для первой строки
+    y=290,       # стартовая Y для первой строки
     font_size=30,
     line_spacing=6,
 )
