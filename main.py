@@ -59,14 +59,14 @@ DEGREE_LAYOUT = BlockLayout(
 # День (например "07")
 DAY_LAYOUT = BlockLayout(
     x=380,
-    y=300,
-    font_size=50,
+    y=360,
+    font_size=80,
 )
 
 # Месяц (например "Dec")
 MONTH_LAYOUT = BlockLayout(
     x=380,
-    y=380,
+    y=320,
     font_size=40,
 )
 
