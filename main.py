@@ -119,13 +119,13 @@ CITIES = [
 #        output="sticker_malmo.png",
 #        background="bg_malmo.png",
 #    ),
-    CityConfig(
-        name="Belgrade",
-        query="Belgrade,RS",
-        emoji="🏙️",
-        output="sticker_belgrade.png",
-        background="bg_belgrade.png",
-    ),
+#    CityConfig(
+#        name="Belgrade",
+#        query="Belgrade,RS",
+#        emoji="🏙️",
+#        output="sticker_belgrade.png",
+#        background="bg_belgrade.png",
+#    ),
     CityConfig(
         name="Moscow",
         query="Moscow,RU",
@@ -154,13 +154,13 @@ CITIES = [
  #       output="sticker_karmiel.png",
  #       background="bg_karmiel.png",
  #   ),
-    CityConfig(
-        name="Ufa",
-        query="Ufa,RU",
-        emoji="🏙️",
-        output="sticker_ufa.png",
-        background="bg_ufa.png",
-    ),
+ #   CityConfig(
+ #       name="Ufa",
+ #       query="Ufa,RU",
+ #       emoji="🏙️",
+ #       output="sticker_ufa.png",
+ #       background="bg_ufa.png",
+ #   ),
  #   CityConfig(
  #       name="Hamburg",
  #       query="Hamburg,DE",
