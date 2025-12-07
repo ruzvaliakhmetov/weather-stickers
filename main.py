@@ -60,21 +60,21 @@ DEGREE_LAYOUT = BlockLayout(
 DAY_LAYOUT = BlockLayout(
     x=380,
     y=330,
-    font_size=74,
+    font_size=64,
 )
 
 # Месяц (например "Dec")
 MONTH_LAYOUT = BlockLayout(
     x=380,
     y=300,
-    font_size=44,
+    font_size=34,
 )
 
 # Время (например "20:55")
 TIME_LAYOUT = BlockLayout(
     x=386,
     y=400,
-    font_size=30,
+    font_size=20,
 )
 
 # Блок деталей (humidity, wind, conditions) — три строки
@@ -105,27 +105,27 @@ class CityConfig:
 
 
 CITIES = [
-#    CityConfig(
-#        name="Tula",
-#        query="Tula,RU",
-#        emoji="🏙️",
-#        output="sticker_tula.png",
-#        background="bg_tula.png",
-#    ),
-#    CityConfig(
-#        name="Malmö",
-#        query="Malmo,SE",  # в API без умлаута
-#        emoji="🏙️",
-#        output="sticker_malmo.png",
-#        background="bg_malmo.png",
-#    ),
-#    CityConfig(
-#        name="Belgrade",
-#        query="Belgrade,RS",
-#        emoji="🏙️",
-#        output="sticker_belgrade.png",
-#        background="bg_belgrade.png",
-#    ),
+    CityConfig(
+        name="Tula",
+        query="Tula,RU",
+        emoji="🏙️",
+        output="sticker_tula.png",
+        background="bg_tula.png",
+    ),
+    CityConfig(
+        name="Malmö",
+        query="Malmo,SE",  # в API без умлаута
+        emoji="🏙️",
+        output="sticker_malmo.png",
+        background="bg_malmo.png",
+    ),
+    CityConfig(
+        name="Belgrade",
+        query="Belgrade,RS",
+        emoji="🏙️",
+        output="sticker_belgrade.png",
+        background="bg_belgrade.png",
+    ),
     CityConfig(
         name="Moscow",
         query="Moscow,RU",
@@ -140,13 +140,13 @@ CITIES = [
  #       output="sticker_saintpetersburg.png",
  #       background="bg_petersburg.png",
  #   ),
- #   CityConfig(
- #       name="Haifa",
- #       query="Haifa,IL",
- #       emoji="🏙️",
- #       output="sticker_haifa.png",
- #       background="bg_haifa.png",
- #   ),
+    CityConfig(
+        name="Haifa",
+        query="Haifa,IL",
+        emoji="🏙️",
+        output="sticker_haifa.png",
+        background="bg_haifa.png",
+    ),
  #   CityConfig(
  #       name="Karmiel",
  #       query="Karmiel,IL",
