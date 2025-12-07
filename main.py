@@ -37,14 +37,14 @@ class DetailsLayout:
 
 # Город
 CITY_LAYOUT = BlockLayout(
-    x=None,   # None = центр по горизонтали
-    y=None,   # None = автоматически чуть выше низа
-    font_size=80,
+    x=50,   # None = центр по горизонтали
+    y=100,   # None = автоматически чуть выше низа
+    font_size=60,
 )
 
 # Температура (число)
 TEMP_LAYOUT = BlockLayout(
-    x=None,   # None = центр по горизонтали
+    x=200,   # None = центр по горизонтали
     y=70,
     font_size=140,
 )
@@ -58,9 +58,9 @@ DEGREE_LAYOUT = BlockLayout(
 
 # День (например "07")
 DAY_LAYOUT = BlockLayout(
-    x=40,
-    y=40,
-    font_size=40,
+    x=400,
+    y=400,
+    font_size=80,
 )
 
 # Месяц (например "Dec")
