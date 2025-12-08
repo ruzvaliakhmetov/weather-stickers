@@ -134,6 +134,13 @@ CITIES = [
         background="bg_moscow.png",
     ),
     CityConfig(
+        name="Ramenskoe",
+        query="Ramenskoye,RU",
+        emoji="🏙️",
+        output="sticker_ramenskoe.png",
+        background="bg_ramenskoe.png",
+    ),
+    CityConfig(
         name="Petersburg",
         query="Saint Petersburg,RU",
         emoji="🏙️",
