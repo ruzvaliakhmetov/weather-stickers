@@ -58,21 +58,21 @@ DEGREE_LAYOUT = BlockLayout(
 
 # День (например "07")
 DAY_LAYOUT = BlockLayout(
-    x=380,
+    x=390,
     y=330,
     font_size=64,
 )
 
 # Месяц (например "Dec")
 MONTH_LAYOUT = BlockLayout(
-    x=380,
+    x=390,
     y=300,
     font_size=34,
 )
 
 # Время (например "20:55")
 TIME_LAYOUT = BlockLayout(
-    x=386,
+    x=396,
     y=400,
     font_size=20,
 )
@@ -154,13 +154,13 @@ CITIES = [
  #       output="sticker_karmiel.png",
  #       background="bg_karmiel.png",
  #   ),
- #   CityConfig(
- #       name="Ufa",
- #       query="Ufa,RU",
- #       emoji="🏙️",
- #       output="sticker_ufa.png",
- #       background="bg_ufa.png",
- #   ),
+    CityConfig(
+        name="Ufa",
+        query="Ufa,RU",
+        emoji="🏙️",
+        output="sticker_ufa.png",
+        background="bg_ufa.png",
+    ),
  #   CityConfig(
  #       name="Hamburg",
  #       query="Hamburg,DE",
