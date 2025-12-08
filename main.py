@@ -54,9 +54,9 @@ TEMP_LAYOUT = BlockLayout(
 
 # Блок "°C" — отдельный независимый блок
 DEGREE_LAYOUT = BlockLayout(
-    x=420,          # обычный x от левого края
-    y=52,          # можешь поставить None и задать default_y при вызове
-    font_size=48,
+    x=430,          # обычный x от левого края
+    y=56,          # можешь поставить None и задать default_y при вызове
+    font_size=42,
     right_align=False,
 )
 
