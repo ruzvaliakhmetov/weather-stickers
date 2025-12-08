@@ -54,9 +54,9 @@ TEMP_LAYOUT = BlockLayout(
 
 # Блок "°C" — отдельный независимый блок
 DEGREE_LAYOUT = BlockLayout(
-    x=370,          # обычный x от левого края
-    y=46,          # можешь поставить None и задать default_y при вызове
-    font_size=50,
+    x=420,          # обычный x от левого края
+    y=52,          # можешь поставить None и задать default_y при вызове
+    font_size=48,
     right_align=False,
 )
 
@@ -70,7 +70,7 @@ DAY_LAYOUT = BlockLayout(
 # Месяц (например "Dec")
 MONTH_LAYOUT = BlockLayout(
     x=394,
-    y=274,
+    y=280,
     font_size=32,
 )
 
