@@ -139,7 +139,7 @@ CITIES = [
         emoji="🏙️",
         output="sticker_saintpetersburg.png",
         background="bg_petersburg.png",
- #   ),
+    ),
     CityConfig(
         name="Haifa",
         query="Haifa,IL",
@@ -147,13 +147,6 @@ CITIES = [
         output="sticker_haifa.png",
         background="bg_haifa.png",
     ),
- #   CityConfig(
- #       name="Karmiel",
- #       query="Karmiel,IL",
- #       emoji="🏙️",
- #       output="sticker_karmiel.png",
- #       background="bg_karmiel.png",
- #   ),
     CityConfig(
         name="Ufa",
         query="Ufa,RU",
