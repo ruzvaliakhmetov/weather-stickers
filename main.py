@@ -46,7 +46,7 @@ CITY_LAYOUT = BlockLayout(
 # Температура (цифры) — ПРАВАЯ ВЫКЛЮЧКА
 # x = отступ от ПРАВОГО края стикера
 TEMP_LAYOUT = BlockLayout(
-    x=300,          # правый край цифр будет в 80 px от правого края картинки
+    x=80,          # правый край цифр будет в 80 px от правого края картинки
     y=30,
     font_size=140,
     right_align=True,
@@ -55,7 +55,7 @@ TEMP_LAYOUT = BlockLayout(
 # Блок "°C" — отдельный независимый блок
 DEGREE_LAYOUT = BlockLayout(
     x=350,          # обычный x от левого края
-    y=20,          # можешь поставить None и задать default_y при вызове
+    y=40,          # можешь поставить None и задать default_y при вызове
     font_size=70,
     right_align=False,
 )
@@ -63,7 +63,7 @@ DEGREE_LAYOUT = BlockLayout(
 # День (например "07")
 DAY_LAYOUT = BlockLayout(
     x=390,
-    y=300,
+    y=308,
     font_size=50,
 )
 
