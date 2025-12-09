@@ -159,14 +159,6 @@ CITIES = [
         tz_offset_hours=2,  # примерно UTC+2
     ),
     CityConfig(
-        name="Karmiel",
-        query="Karmiel,IL",
-        emoji="🏙️",
-        output="sticker_karmiel.png",
-        background="bg_karmiel.png",
-        tz_offset_hours=2,  # примерно UTC+2
-    ),
-    CityConfig(
         name="Ufa",
         query="Ufa,RU",
         emoji="🏙️",
