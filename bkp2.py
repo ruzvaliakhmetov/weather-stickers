@@ -1,7 +1,7 @@
 import os
 from dataclasses import dataclass
 from pathlib import Path
-from datetime import datetime, timedelta
+from datetime import datetime
 
 import requests
 from PIL import Image, ImageDraw, ImageFont
@@ -40,14 +40,14 @@ class DetailsLayout:
 CITY_LAYOUT = BlockLayout(
     x=50,   # None = центр по горизонтали
     y=400,   # None = автоматически чуть выше низа
-    font_size=58,
+    font_size=60,
 )
 
 # Температура (цифры) — ПРАВАЯ ВЫКЛЮЧКА
 # x = отступ от ПРАВОГО края стикера
 TEMP_LAYOUT = BlockLayout(
     x=80,          # правый край цифр будет в 80 px от правого края картинки
-    y=70,
+    y=30,
     font_size=140,
     right_align=True,
 )
@@ -64,7 +64,7 @@ DEGREE_LAYOUT = BlockLayout(
 DAY_LAYOUT = BlockLayout(
     x=394,
     y=310,
-    font_size=48,
+    font_size=50,
 )
 
 # Месяц (например "Dec")
@@ -101,12 +101,11 @@ ICON_SIZE = (225, 225)
 
 @dataclass
 class CityConfig:
-    name: str          # как написать город на стикере
-    query: str         # как отдать город в API
-    emoji: str         # эмодзи для стикера
-    output: str        # куда сохранить png
-    background: str    # фон города (PNG), путь относительно IMAGES_DIR
-    tz_offset_hours: int = 0  # смещение от UTC, для локального времени города
+    name: str      # как написать город на стикере
+    query: str     # как отдать город в API
+    emoji: str     # эмодзи для стикера
+    output: str    # куда сохранить png
+    background: str  # фон города (PNG), путь относительно IMAGES_DIR
 
 
 CITIES = [
@@ -116,7 +115,6 @@ CITIES = [
         emoji="🏙️",
         output="sticker_tula.png",
         background="bg_tula.png",
-        tz_offset_hours=3,   # UTC+3
     ),
     CityConfig(
         name="Malmö",
@@ -124,7 +122,6 @@ CITIES = [
         emoji="🏙️",
         output="sticker_malmo.png",
         background="bg_malmo.png",
-        tz_offset_hours=1,  # Europe/Stockholm зимой ≈ UTC+1
     ),
     CityConfig(
         name="Belgrade",
@@ -132,7 +129,6 @@ CITIES = [
         emoji="🏙️",
         output="sticker_belgrade.png",
         background="bg_belgrade.png",
-        tz_offset_hours=1,  # Europe/Belgrade ≈ UTC+1
     ),
     CityConfig(
         name="Moscow",
@@ -140,15 +136,20 @@ CITIES = [
         emoji="🏙️",
         output="sticker_moscow.png",
         background="bg_moscow.png",
-        tz_offset_hours=3,  # UTC+3
     ),
     CityConfig(
-        name="Petersburg",
+        name="Ramenskoe",
+        query="Ramenskoye,RU",
+        emoji="🏙️",
+        output="sticker_ramenskoe.png",
+        background="bg_ramenskoe.png",
+    ),
+    CityConfig(
+        name="St. Petersburg",
         query="Saint Petersburg,RU",
         emoji="🏙️",
         output="sticker_saintpetersburg.png",
         background="bg_petersburg.png",
-        tz_offset_hours=3,  # UTC+3
     ),
     CityConfig(
         name="Haifa",
@@ -156,15 +157,6 @@ CITIES = [
         emoji="🏙️",
         output="sticker_haifa.png",
         background="bg_haifa.png",
-        tz_offset_hours=2,  # примерно UTC+2
-    ),
-    CityConfig(
-        name="Karmiel",
-        query="Karmiel,IL",
-        emoji="🏙️",
-        output="sticker_karmiel.png",
-        background="bg_karmiel.png",
-        tz_offset_hours=2,  # примерно UTC+2
     ),
     CityConfig(
         name="Ufa",
@@ -172,7 +164,6 @@ CITIES = [
         emoji="🏙️",
         output="sticker_ufa.png",
         background="bg_ufa.png",
-        tz_offset_hours=5,  # примерно UTC+5
     ),
     CityConfig(
         name="Hamburg",
@@ -180,7 +171,6 @@ CITIES = [
         emoji="🏙️",
         output="sticker_hamburg.png",
         background="bg_hamburg.png",
-        tz_offset_hours=1,  # Europe/Berlin зимой ≈ UTC+1
     ),
 ]
 
@@ -414,19 +404,16 @@ async def update_stickers() -> None:
 
     bot = Bot(token)
 
+    # timestamp для всех стикеров одинаковый
+    now = datetime.now()
+    day_text = now.strftime("%d")    # "07"
+    month_text = now.strftime("%b")  # "Dec"
+    time_text = now.strftime("%H:%M")  # "20:55"
+
     new_stickers: list[InputSticker] = []
 
     for city in CITIES:
         weather = fetch_weather(city)
-
-        # Локальное время города по его часовому поясу (через фиксированный offset от UTC)
-        utc_now = datetime.utcnow()
-        city_now = utc_now + timedelta(hours=city.tz_offset_hours)
-
-        day_text = city_now.strftime("%d")     # "07"
-        month_text = city_now.strftime("%b")   # "Dec"
-        time_text = city_now.strftime("%H:%M") # "20:55"
-
         generate_weather_image(city, weather, city.output, day_text, month_text, time_text)
 
         with open(city.output, "rb") as f:
