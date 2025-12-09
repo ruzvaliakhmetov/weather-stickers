@@ -132,6 +132,7 @@ CITIES = [
         emoji="🏙️",
         output="sticker_ramenskoe.png",
         background="bg_ramenskoe.png",
+        tz_offset_hours=3,  # UTC+3
     ),
     CityConfig(
         name="St. Petersburg",
@@ -158,14 +159,6 @@ CITIES = [
         tz_offset_hours=1,  # Europe/Belgrade ≈ UTC+1
     ),
     CityConfig(
-        name="Haifa",
-        query="Haifa,IL",
-        emoji="🏙️",
-        output="sticker_haifa.png",
-        background="bg_haifa.png",
-        tz_offset_hours=2,  # примерно UTC+2
-    ),
-    CityConfig(
         name="Malmö",
         query="Malmo,SE",  # в API без умлаута
         emoji="🏙️",
@@ -180,6 +173,14 @@ CITIES = [
         output="sticker_hamburg.png",
         background="bg_hamburg.png",
         tz_offset_hours=1,  # Europe/Berlin зимой ≈ UTC+1
+    ),
+    CityConfig(
+        name="Haifa",
+        query="Haifa,IL",
+        emoji="🏙️",
+        output="sticker_haifa.png",
+        background="bg_haifa.png",
+        tz_offset_hours=2,  # примерно UTC+2
     ),
 ]
 
