@@ -118,15 +118,7 @@ CITIES = [
         background="bg_tula.png",
         tz_offset_hours=3,   # UTC+3
     ),
-    CityConfig(
-        name="Malmö",
-        query="Malmo,SE",  # в API без умлаута
-        emoji="🏙️",
-        output="sticker_malmo.png",
-        background="bg_malmo.png",
-        tz_offset_hours=1,  # Europe/Stockholm зимой ≈ UTC+1
-    ),
-    CityConfig(
+        CityConfig(
         name="Belgrade",
         query="Belgrade,RS",
         emoji="🏙️",
@@ -143,12 +135,27 @@ CITIES = [
         tz_offset_hours=3,  # UTC+3
     ),
     CityConfig(
+        name="Ramenskoe",
+        query="Ramenskoye,RU",
+        emoji="🏙️",
+        output="sticker_ramenskoe.png",
+        background="bg_ramenskoe.png",
+    ),
+    CityConfig(
         name="St. Petersburg",
         query="Saint Petersburg,RU",
         emoji="🏙️",
         output="sticker_saintpetersburg.png",
         background="bg_petersburg.png",
         tz_offset_hours=3,  # UTC+3
+    ),
+    CityConfig(
+        name="Ufa",
+        query="Ufa,RU",
+        emoji="🏙️",
+        output="sticker_ufa.png",
+        background="bg_ufa.png",
+        tz_offset_hours=5,  # примерно UTC+5
     ),
     CityConfig(
         name="Haifa",
@@ -159,12 +166,12 @@ CITIES = [
         tz_offset_hours=2,  # примерно UTC+2
     ),
     CityConfig(
-        name="Ufa",
-        query="Ufa,RU",
+        name="Malmö",
+        query="Malmo,SE",  # в API без умлаута
         emoji="🏙️",
-        output="sticker_ufa.png",
-        background="bg_ufa.png",
-        tz_offset_hours=5,  # примерно UTC+5
+        output="sticker_malmo.png",
+        background="bg_malmo.png",
+        tz_offset_hours=1,  # Europe/Stockholm зимой ≈ UTC+1
     ),
     CityConfig(
         name="Hamburg",
