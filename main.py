@@ -47,7 +47,7 @@ CITY_LAYOUT = BlockLayout(
 # x = отступ от ПРАВОГО края стикера
 TEMP_LAYOUT = BlockLayout(
     x=80,          # правый край цифр будет в 80 px от правого края картинки
-    y=70,
+    y=30,
     font_size=140,
     right_align=True,
 )
@@ -143,7 +143,7 @@ CITIES = [
         tz_offset_hours=3,  # UTC+3
     ),
     CityConfig(
-        name="Petersburg",
+        name="St. Petersburg",
         query="Saint Petersburg,RU",
         emoji="🏙️",
         output="sticker_saintpetersburg.png",
