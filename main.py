@@ -118,14 +118,6 @@ CITIES = [
         background="bg_tula.png",
         tz_offset_hours=3,   # UTC+3
     ),
-        CityConfig(
-        name="Belgrade",
-        query="Belgrade,RS",
-        emoji="🏙️",
-        output="sticker_belgrade.png",
-        background="bg_belgrade.png",
-        tz_offset_hours=1,  # Europe/Belgrade ≈ UTC+1
-    ),
     CityConfig(
         name="Moscow",
         query="Moscow,RU",
@@ -156,6 +148,14 @@ CITIES = [
         output="sticker_ufa.png",
         background="bg_ufa.png",
         tz_offset_hours=5,  # примерно UTC+5
+    ),
+    CityConfig(
+        name="Belgrade",
+        query="Belgrade,RS",
+        emoji="🏙️",
+        output="sticker_belgrade.png",
+        background="bg_belgrade.png",
+        tz_offset_hours=1,  # Europe/Belgrade ≈ UTC+1
     ),
     CityConfig(
         name="Haifa",
