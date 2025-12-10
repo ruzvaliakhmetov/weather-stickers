@@ -175,12 +175,44 @@ CITIES = [
         tz_offset_hours=1,  # Europe/Berlin зимой ≈ UTC+1
     ),
     CityConfig(
+        name="Vienna",
+        query="Vienna, AT",
+        emoji="🏙️",
+        output="sticker_vienna.png",
+        background="bg_fallback.png",
+        tz_offset_hours=1,  # Europe/Vienna зимой ≈ UTC+1
+    ),
+    CityConfig(
+        name="Prague",
+        query="Prague, CZ",
+        emoji="🏙️",
+        output="sticker_prague.png",
+        background="bg_fallback.png",
+        tz_offset_hours=1,  # Europe/Vienna зимой ≈ UTC+1
+    ),
+    CityConfig(
         name="Haifa",
         query="Haifa,IL",
         emoji="🏙️",
         output="sticker_haifa.png",
         background="bg_haifa.png",
         tz_offset_hours=2,  # примерно UTC+2
+    ),
+    CityConfig(
+        name="Tokyo",
+        query="Tokyo,JP",
+        emoji="🏙️",
+        output="sticker_tokyo.png",
+        background="bg_fallback.png",
+        tz_offset_hours=9,  # UTC+9
+    ),
+    CityConfig(
+        name="Osaka",
+        query="Osaka,JP",
+        emoji="🏙️",
+        output="sticker_osaka.png",
+        background="bg_fallback.png",
+        tz_offset_hours=9,  # UTC+9
     ),
 ]
 
