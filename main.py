@@ -179,7 +179,7 @@ CITIES = [
         query="Vienna, AT",
         emoji="🏙️",
         output="sticker_vienna.png",
-        background="bg_fallback.png",
+        background="bg_vienna.png",
         tz_offset_hours=1,  # Europe/Vienna зимой ≈ UTC+1
     ),
     CityConfig(
@@ -187,7 +187,7 @@ CITIES = [
         query="Prague, CZ",
         emoji="🏙️",
         output="sticker_prague.png",
-        background="bg_fallback.png",
+        background="bg_prague.png",
         tz_offset_hours=1,  # Europe/Vienna зимой ≈ UTC+1
     ),
     CityConfig(
@@ -203,7 +203,7 @@ CITIES = [
         query="Tokyo,JP",
         emoji="🏙️",
         output="sticker_tokyo.png",
-        background="bg_fallback.png",
+        background="bg_tokyo.png",
         tz_offset_hours=9,  # UTC+9
     ),
     CityConfig(
@@ -211,7 +211,7 @@ CITIES = [
         query="Osaka,JP",
         emoji="🏙️",
         output="sticker_osaka.png",
-        background="bg_fallback.png",
+        background="bg_osaka.png",
         tz_offset_hours=9,  # UTC+9
     ),
 ]
