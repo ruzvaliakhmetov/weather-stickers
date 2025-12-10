@@ -111,14 +111,6 @@ class CityConfig:
 
 CITIES = [
     CityConfig(
-        name="Tula",
-        query="Tula,RU",
-        emoji="🏙️",
-        output="sticker_tula.png",
-        background="bg_tula.png",
-        tz_offset_hours=3,   # UTC+3
-    ),
-    CityConfig(
         name="Moscow",
         query="Moscow,RU",
         emoji="🏙️",
@@ -141,14 +133,6 @@ CITIES = [
         output="sticker_saintpetersburg.png",
         background="bg_petersburg.png",
         tz_offset_hours=3,  # UTC+3
-    ),
-    CityConfig(
-        name="Ufa",
-        query="Ufa,RU",
-        emoji="🏙️",
-        output="sticker_ufa.png",
-        background="bg_ufa.png",
-        tz_offset_hours=5,  # примерно UTC+5
     ),
     CityConfig(
         name="Belgrade",
