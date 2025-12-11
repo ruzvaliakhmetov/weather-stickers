@@ -135,6 +135,14 @@ CITIES = [
         tz_offset_hours=3,  # UTC+3
     ),
     CityConfig(
+        name="Ufa",
+        query="Ufa,RU",
+        emoji="🇷🇺",
+        output="sticker_ufa.png",
+        background="bg_ufa.png",
+        tz_offset_hours=5,  # UTC+5
+    ),
+    CityConfig(
         name="Belgrade",
         query="Belgrade,RS",
         emoji="🇷🇸",
