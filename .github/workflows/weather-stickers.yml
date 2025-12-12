@@ -4,7 +4,7 @@ name: Update weather stickers
 on:
   schedule:
     # каждые 2 часа, по нулевой минуте (UTC)
-    - cron: "*/15 * * * *"
+    - cron: "0 */2 * * *"
   # возможность запустить вручную из Actions
   workflow_dispatch:
 
