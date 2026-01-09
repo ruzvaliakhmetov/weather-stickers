@@ -111,12 +111,76 @@ class CityConfig:
 
 CITIES = [
     CityConfig(
+        name="London",
+        query="London,GB",
+        emoji="🇬🇧",
+        output="sticker_london.png",
+        background="bg_fallback.png",
+        tz_offset_hours=0,  # UTC+0
+    ),
+    CityConfig(
         name="Porto",
         query="Porto,PT",
         emoji="🇵🇹",
         output="sticker_porto.png",
         background="bg_fallback.png",
         tz_offset_hours=0,  # UTC+0
+    ),
+    CityConfig(
+        name="Hamburg",
+        query="Hamburg,DE",
+        emoji="🇩🇪",
+        output="sticker_hamburg.png",
+        background="bg_hamburg.png",
+        tz_offset_hours=1,  # Europe/Berlin зимой ≈ UTC+1
+    ),
+    CityConfig(
+        name="Malmö",
+        query="Malmo,SE",  # в API без умлаута
+        emoji="🇸🇪",
+        output="sticker_malmo.png",
+        background="bg_malmo.png",
+        tz_offset_hours=1,  # Europe/Stockholm зимой ≈ UTC+1
+    ),    
+    CityConfig(
+        name="Vienna",
+        query="Vienna, AT",
+        emoji="🇦🇹",
+        output="sticker_vienna.png",
+        background="bg_vienna.png",
+        tz_offset_hours=1,  # Europe/Vienna зимой ≈ UTC+1
+    ),
+    CityConfig(
+        name="Prague",
+        query="Prague, CZ",
+        emoji="🇨🇿",
+        output="sticker_prague.png",
+        background="bg_prague.png",
+        tz_offset_hours=1,  # Europe/Vienna зимой ≈ UTC+1
+    ),
+    CityConfig(
+        name="Belgrade",
+        query="Belgrade,RS",
+        emoji="🇷🇸",
+        output="sticker_belgrade.png",
+        background="bg_belgrade.png",
+        tz_offset_hours=1,  # Europe/Belgrade ≈ UTC+1
+    ),
+    CityConfig(
+        name="Haifa",
+        query="Haifa,IL",
+        emoji="🇮🇱",
+        output="sticker_haifa.png",
+        background="bg_haifa.png",
+        tz_offset_hours=2,  # примерно UTC+2
+    ),
+    CityConfig(
+        name="Minsk",
+        query="Minsk,BY",
+        emoji="🇵🇹",
+        output="sticker_minsk.png",
+        background="bg_fallback.png",
+        tz_offset_hours=3,  # UTC+3
     ),
     CityConfig(
         name="Moscow",
@@ -149,54 +213,6 @@ CITIES = [
         output="sticker_ufa.png",
         background="bg_ufa.png",
         tz_offset_hours=5,  # UTC+5
-    ),
-    CityConfig(
-        name="Belgrade",
-        query="Belgrade,RS",
-        emoji="🇷🇸",
-        output="sticker_belgrade.png",
-        background="bg_belgrade.png",
-        tz_offset_hours=1,  # Europe/Belgrade ≈ UTC+1
-    ),
-    CityConfig(
-        name="Malmö",
-        query="Malmo,SE",  # в API без умлаута
-        emoji="🇸🇪",
-        output="sticker_malmo.png",
-        background="bg_malmo.png",
-        tz_offset_hours=1,  # Europe/Stockholm зимой ≈ UTC+1
-    ),
-    CityConfig(
-        name="Hamburg",
-        query="Hamburg,DE",
-        emoji="🇩🇪",
-        output="sticker_hamburg.png",
-        background="bg_hamburg.png",
-        tz_offset_hours=1,  # Europe/Berlin зимой ≈ UTC+1
-    ),
-    CityConfig(
-        name="Vienna",
-        query="Vienna, AT",
-        emoji="🇦🇹",
-        output="sticker_vienna.png",
-        background="bg_vienna.png",
-        tz_offset_hours=1,  # Europe/Vienna зимой ≈ UTC+1
-    ),
-    CityConfig(
-        name="Prague",
-        query="Prague, CZ",
-        emoji="🇨🇿",
-        output="sticker_prague.png",
-        background="bg_prague.png",
-        tz_offset_hours=1,  # Europe/Vienna зимой ≈ UTC+1
-    ),
-    CityConfig(
-        name="Haifa",
-        query="Haifa,IL",
-        emoji="🇮🇱",
-        output="sticker_haifa.png",
-        background="bg_haifa.png",
-        tz_offset_hours=2,  # примерно UTC+2
     ),
     CityConfig(
         name="Tokyo",
