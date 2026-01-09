@@ -111,6 +111,14 @@ class CityConfig:
 
 CITIES = [
     CityConfig(
+        name="Porto",
+        query="Porto,PT",
+        emoji="🇵🇹",
+        output="sticker_porto.png",
+        background="bg_fallback.png",
+        tz_offset_hours=0,  # UTC+0
+    ),
+    CityConfig(
         name="Moscow",
         query="Moscow,RU",
         emoji="🇷🇺",
