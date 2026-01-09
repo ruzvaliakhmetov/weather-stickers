@@ -177,7 +177,7 @@ CITIES = [
     CityConfig(
         name="Minsk",
         query="Minsk,BY",
-        emoji="🇵🇹",
+        emoji="🇧🇾",
         output="sticker_minsk.png",
         background="bg_fallback.png",
         tz_offset_hours=3,  # UTC+3
