@@ -115,7 +115,7 @@ CITIES = [
         query="London,GB",
         emoji="🇬🇧",
         output="sticker_london.png",
-        background="bg_fallback.png",
+        background="bg_london.png",
         tz_offset_hours=0,  # UTC+0
     ),
     CityConfig(
@@ -123,7 +123,7 @@ CITIES = [
         query="Porto,PT",
         emoji="🇵🇹",
         output="sticker_porto.png",
-        background="bg_fallback.png",
+        background="bg_porto.png",
         tz_offset_hours=0,  # UTC+0
     ),
     CityConfig(
@@ -179,7 +179,7 @@ CITIES = [
         query="Minsk,BY",
         emoji="🇧🇾",
         output="sticker_minsk.png",
-        background="bg_fallback.png",
+        background="bg_minsk.png",
         tz_offset_hours=3,  # UTC+3
     ),
     CityConfig(
