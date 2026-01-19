@@ -183,6 +183,14 @@ CITIES = [
         tz_offset_hours=2,  # примерно UTC+2
     ),
     CityConfig(
+        name="Istanbul",
+        query="İstanbul,TR",
+        emoji="🇹🇷",
+        output="sticker_istanbul.png",
+        background="bg_istanbul.png",
+        tz_offset_hours=3,  # UTC+3
+    ),
+    CityConfig(
         name="Minsk",
         query="Minsk,BY",
         emoji="🇧🇾",
