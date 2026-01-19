@@ -215,6 +215,14 @@ CITIES = [
         tz_offset_hours=3,  # UTC+3
     ),
     CityConfig(
+        name="Tbilisi",
+        query="Tbilisi,GE",
+        emoji="🇬🇪",
+        output="sticker_tbilisi.png",
+        background="bg_tbilisi.png",
+        tz_offset_hours=4,  # UTC+4
+    ),
+    CityConfig(
         name="Ufa",
         query="Ufa,RU",
         emoji="🇷🇺",
