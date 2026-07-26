@@ -115,7 +115,7 @@ CITIES = [
         query="Conakry, GN",
         emoji="🇬🇳",
         output="sticker_conakry.png",
-        background="bg_fallback.png",
+        background="bg_conakry.png",
         tz_offset_hours=0,  # UTC+0
     ),
     CityConfig(
