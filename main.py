@@ -112,11 +112,19 @@ class CityConfig:
 CITIES = [
     CityConfig(
         name="London",
+        query="Conakry, GN",
+        emoji="🇬🇳",
+        output="sticker_conakry.png",
+        background="bg_fallback.png",
+        tz_offset_hours=0,  # UTC+0
+    ),
+    CityConfig(
+        name="London",
         query="London,GB",
         emoji="🇬🇧",
         output="sticker_london.png",
         background="bg_london.png",
-        tz_offset_hours=0,  # UTC+0
+        tz_offset_hours=1,  # UTC+1
     ),
     CityConfig(
         name="Porto",
@@ -124,7 +132,7 @@ CITIES = [
         emoji="🇵🇹",
         output="sticker_porto.png",
         background="bg_porto.png",
-        tz_offset_hours=0,  # UTC+0
+        tz_offset_hours=1,  # UTC+1
     ),
     CityConfig(
         name="Hamburg",
@@ -132,7 +140,7 @@ CITIES = [
         emoji="🇩🇪",
         output="sticker_hamburg.png",
         background="bg_hamburg.png",
-        tz_offset_hours=1,  # Europe/Berlin зимой ≈ UTC+1
+        tz_offset_hours=2,  # Europe/Berlin зимой ≈ UTC+1
     ),
     CityConfig(
         name="Malmö",
@@ -140,7 +148,7 @@ CITIES = [
         emoji="🇸🇪",
         output="sticker_malmo.png",
         background="bg_malmo.png",
-        tz_offset_hours=1,  # Europe/Stockholm зимой ≈ UTC+1
+        tz_offset_hours=2,  # Europe/Stockholm зимой ≈ UTC+1
     ),    
     CityConfig(
         name="Vienna",
@@ -148,7 +156,7 @@ CITIES = [
         emoji="🇦🇹",
         output="sticker_vienna.png",
         background="bg_vienna.png",
-        tz_offset_hours=1,  # Europe/Vienna зимой ≈ UTC+1
+        tz_offset_hours=2,  # Europe/Vienna зимой ≈ UTC+1
     ),
     CityConfig(
         name="Prague",
@@ -156,7 +164,7 @@ CITIES = [
         emoji="🇨🇿",
         output="sticker_prague.png",
         background="bg_prague.png",
-        tz_offset_hours=1,  # Europe/Vienna зимой ≈ UTC+1
+        tz_offset_hours=2,  # Europe/Vienna зимой ≈ UTC+1
     ),
     CityConfig(
         name="Belgrade",
@@ -164,7 +172,7 @@ CITIES = [
         emoji="🇷🇸",
         output="sticker_belgrade.png",
         background="bg_belgrade.png",
-        tz_offset_hours=1,  # Europe/Belgrade ≈ UTC+1
+        tz_offset_hours=2,  # Europe/Belgrade ≈ UTC+1
     ),
     CityConfig(
         name="Haifa",
@@ -172,7 +180,7 @@ CITIES = [
         emoji="🇮🇱",
         output="sticker_haifa.png",
         background="bg_haifa.png",
-        tz_offset_hours=2,  # примерно UTC+2
+        tz_offset_hours=3,  # примерно UTC+2
     ),
     CityConfig(
         name="Riga",
@@ -180,7 +188,7 @@ CITIES = [
         emoji="🇱🇻",
         output="sticker_riga.png",
         background="bg_riga.png",
-        tz_offset_hours=2,  # примерно UTC+2
+        tz_offset_hours=3,  # примерно UTC+2
     ),
     CityConfig(
         name="Istanbul",
@@ -188,7 +196,7 @@ CITIES = [
         emoji="🇹🇷",
         output="sticker_istanbul.png",
         background="bg_istanbul.png",
-        tz_offset_hours=3,  # UTC+3
+        tz_offset_hours=4,  # UTC+3
     ),
     CityConfig(
         name="Minsk",
@@ -196,7 +204,7 @@ CITIES = [
         emoji="🇧🇾",
         output="sticker_minsk.png",
         background="bg_minsk.png",
-        tz_offset_hours=3,  # UTC+3
+        tz_offset_hours=4,  # UTC+3
     ),
     CityConfig(
         name="Moscow",
@@ -204,7 +212,7 @@ CITIES = [
         emoji="🇷🇺",
         output="sticker_moscow.png",
         background="bg_moscow.png",
-        tz_offset_hours=3,  # UTC+3
+        tz_offset_hours=4,  # UTC+3
     ),
     CityConfig(
         name="Ramenskoe",
@@ -212,7 +220,7 @@ CITIES = [
         emoji="🇷🇺",
         output="sticker_ramenskoe.png",
         background="bg_ramenskoe.png",
-        tz_offset_hours=3,  # UTC+3
+        tz_offset_hours=4,  # UTC+3
     ),
     CityConfig(
         name="St. Petersburg",
@@ -220,7 +228,7 @@ CITIES = [
         emoji="🇷🇺",
         output="sticker_saintpetersburg.png",
         background="bg_petersburg.png",
-        tz_offset_hours=3,  # UTC+3
+        tz_offset_hours=4,  # UTC+3
     ),
     CityConfig(
         name="Tbilisi",
@@ -228,7 +236,7 @@ CITIES = [
         emoji="🇬🇪",
         output="sticker_tbilisi.png",
         background="bg_tbilisi.png",
-        tz_offset_hours=4,  # UTC+4
+        tz_offset_hours=5,  # UTC+4
     ),
     CityConfig(
         name="Ufa",
@@ -236,7 +244,7 @@ CITIES = [
         emoji="🇷🇺",
         output="sticker_ufa.png",
         background="bg_ufa.png",
-        tz_offset_hours=5,  # UTC+5
+        tz_offset_hours=6,  # UTC+5
     ),
     CityConfig(
         name="Tokyo",
@@ -244,7 +252,7 @@ CITIES = [
         emoji="🇯🇵",
         output="sticker_tokyo.png",
         background="bg_tokyo.png",
-        tz_offset_hours=9,  # UTC+9
+        tz_offset_hours=10,  # UTC+9
     ),
     CityConfig(
         name="Osaka",
@@ -252,7 +260,7 @@ CITIES = [
         emoji="🇯🇵",
         output="sticker_osaka.png",
         background="bg_osaka.png",
-        tz_offset_hours=9,  # UTC+9
+        tz_offset_hours=10,  # UTC+9
     ),
 ]
 
