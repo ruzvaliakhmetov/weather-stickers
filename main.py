@@ -111,7 +111,7 @@ class CityConfig:
 
 CITIES = [
     CityConfig(
-        name="London",
+        name="Conakry",
         query="Conakry, GN",
         emoji="🇬🇳",
         output="sticker_conakry.png",
